@@ -10,6 +10,7 @@ const port = process.env.PORT || 5000;
 
 //middleware allow us to send and recieve json
 app.use(cors());
+app.use(express.static('build'));
 app.use(express.json());
 
 //connecting to the db
