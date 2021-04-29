@@ -12,9 +12,9 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-/*app.get('/', (req, res) => {
+app.get('/', (req, res) => {
 	res.send('Welcome to Family Todo API');
-});*/
+});
 
 //connecting to the db
 const uri = process.env.ATLAS_URI;
